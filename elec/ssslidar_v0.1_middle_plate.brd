@@ -61,13 +61,11 @@
 </layers>
 <board>
 <plain>
-<wire x1="0.2" y1="12.5" x2="0.2" y2="3.5" width="0.01" layer="20"/>
-<wire x1="0.2" y1="3.5" x2="8" y2="-1" width="0.01" layer="20"/>
-<wire x1="8" y1="-1" x2="15.8" y2="3.5" width="0.01" layer="20"/>
-<wire x1="15.8" y1="3.5" x2="15.8" y2="12.5" width="0.01" layer="20"/>
-<wire x1="15.8" y1="12.5" x2="8" y2="17" width="0.01" layer="20"/>
-<wire x1="8" y1="17" x2="0.2" y2="12.5" width="0.01" layer="20"/>
 <circle x="8" y="8" radius="7.71038125" width="0.1" layer="20"/>
+<text x="8.7" y="10.6" size="1.778" layer="21" font="vector" ratio="15" rot="R15">SSS</text>
+<text x="3.5" y="2.7" size="1" layer="21" font="vector" ratio="15" rot="R345">D</text>
+<text x="14.6" y="6.6" size="1" layer="21" font="vector" ratio="15" rot="SR105">E</text>
+<text x="6.2" y="14.1" size="1" layer="21" font="vector" ratio="15" rot="SR225">F</text>
 </plain>
 <libraries>
 <library name="ssslidar">
