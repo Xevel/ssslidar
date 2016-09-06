@@ -61,7 +61,7 @@
 </layers>
 <board>
 <plain>
-<circle x="8" y="8" radius="7.71038125" width="0.1" layer="20"/>
+<circle x="8" y="8" radius="7.5" width="0.1" layer="20"/>
 <text x="8.7" y="10.6" size="1.778" layer="21" font="vector" ratio="15" rot="R15">SSS</text>
 <text x="3.5" y="2.7" size="1" layer="21" font="vector" ratio="15" rot="R345">D</text>
 <text x="14.6" y="6.6" size="1" layer="21" font="vector" ratio="15" rot="SR105">E</text>
@@ -316,8 +316,8 @@ design rules under a new name.</description>
 <contactref element="B1" pad="2"/>
 <wire x1="7.390415625" y1="6.024928125" x2="4.3" y2="5.6" width="0.2" layer="16" curve="-55.974559"/>
 <via x="4.3" y="5.6" extent="1-16" drill="0.3"/>
-<wire x1="4.3" y1="5.6" x2="5.3" y2="6.6" width="0.2" layer="1" curve="-77.033827"/>
-<wire x1="5.3" y1="6.6" x2="6.484546875" y2="6.594328125" width="0.2" layer="1" curve="-29.379539"/>
+<wire x1="4.3" y1="5.6" x2="5" y2="6.7" width="0.2" layer="1" curve="-77.033827"/>
+<wire x1="5" y1="6.7" x2="6.484546875" y2="6.594328125" width="0.2" layer="1" curve="-29.379539"/>
 </signal>
 <signal name="N$1">
 <contactref element="B3" pad="2"/>
@@ -359,10 +359,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$6">
 <contactref element="B6" pad="3"/>
-<contactref element="B1" pad="4"/>
-<wire x1="5.91514375" y1="4.46929375" x2="4.2" y2="4.2" width="0.2" layer="1" curve="74.163437"/>
-<wire x1="4.2" y1="4.2" x2="2.8" y2="4.3" width="0.2" layer="1" curve="-91.287602"/>
-<wire x1="2.8" y1="4.3" x2="2.5" y2="6.1" width="0.2" layer="1" curve="-72.054747"/>
+<contactref element="B1" pad="5"/>
+<wire x1="5.63044375" y1="3.406775" x2="4" y2="3.8" width="0.2" layer="1" curve="74.163437"/>
+<wire x1="4" y1="3.8" x2="2.6" y2="4.4" width="0.2" layer="1" curve="-68.122136"/>
+<wire x1="2.6" y1="4.4" x2="2.5" y2="6.1" width="0.2" layer="1" curve="-39.307648"/>
 <via x="2.5" y="6.1" extent="1-16" drill="0.3"/>
 <wire x1="2.5" y1="6.1" x2="2.9" y2="6.5" width="0.2" layer="16" curve="-36.869898"/>
 <wire x1="2.9" y1="6.5" x2="3.9" y2="6.7" width="0.2" layer="16" curve="-31.890792"/>
@@ -372,10 +372,10 @@ design rules under a new name.</description>
 <contactref element="B6" pad="4"/>
 <contactref element="B2" pad="7"/>
 <wire x1="2.873475" y1="11.5708875" x2="2.6" y2="11.3" width="0.2" layer="1"/>
-<wire x1="2.6" y1="11.3" x2="1.9" y2="8.7" width="0.2" layer="1" curve="69.01704"/>
-<wire x1="1.9" y1="8.7" x2="1.4" y2="6.8" width="0.2" layer="1" curve="-84.547378"/>
-<via x="1.4" y="6.8" extent="1-16" drill="0.3"/>
-<wire x1="1.4" y1="6.8" x2="2.4" y2="7" width="0.2" layer="16" curve="-84.547378"/>
+<wire x1="2.6" y1="11.3" x2="2.1" y2="9.2" width="0.2" layer="1" curve="69.01704"/>
+<wire x1="2.1" y1="9.2" x2="1.7" y2="6.9" width="0.2" layer="1" curve="-84.547378"/>
+<via x="1.7" y="6.9" extent="1-16" drill="0.3"/>
+<wire x1="1.7" y1="6.9" x2="2.4" y2="7" width="0.2" layer="16" curve="-84.547378"/>
 <wire x1="2.4" y1="7" x2="3.4" y2="7.3" width="0.2" layer="16" curve="61.927455"/>
 <wire x1="3.4" y1="7.3" x2="3.89989375" y2="7.959815625" width="0.2" layer="16" curve="65.628491"/>
 </signal>
@@ -419,21 +419,21 @@ design rules under a new name.</description>
 <wire x1="8.32488125" y1="4.962409375" x2="11.6" y2="5.1" width="0.2" layer="1" curve="53.724154"/>
 <via x="11.6" y="5.1" extent="1-16" drill="0.3"/>
 <wire x1="11.6" y1="5.1" x2="12.4" y2="6.2" width="0.2" layer="16" curve="76.177424"/>
-<wire x1="12.4" y1="6.2" x2="11.8" y2="7.2" width="0.2" layer="16" curve="90"/>
+<wire x1="12.4" y1="6.2" x2="11.8" y2="7.2" width="0.2" layer="16" curve="83.75562"/>
 <wire x1="11.8" y1="7.2" x2="10.5" y2="7.7" width="0.2" layer="16" curve="-51.11975"/>
 <wire x1="10.5" y1="7.7" x2="10.01525625" y2="8.45961875" width="0.2" layer="16"/>
 </signal>
 <signal name="N$14">
-<contactref element="B1" pad="3"/>
+<contactref element="B1" pad="4"/>
 <contactref element="B6" pad="2"/>
 <wire x1="6.02493125" y1="7.3904125" x2="5.5" y2="6.8" width="0.2" layer="16"/>
 <wire x1="5.5" y1="6.8" x2="4.2" y2="6.3" width="0.2" layer="16" curve="-48.682222"/>
 <wire x1="4.2" y1="6.3" x2="3.5" y2="6" width="0.2" layer="16" curve="39.307648"/>
 <wire x1="3.5" y1="6" x2="3.5" y2="5" width="0.2" layer="16" curve="90"/>
 <via x="3.5" y="5" extent="1-16" drill="0.3"/>
-<wire x1="3.5" y1="5" x2="4.6" y2="5" width="0.2" layer="1" curve="80.472717"/>
-<wire x1="4.6" y1="5" x2="5.2" y2="5.4" width="0.2" layer="1"/>
-<wire x1="5.2" y1="5.4" x2="6.199846875" y2="5.531809375" width="0.2" layer="1" curve="-52.407106"/>
+<wire x1="3.5" y1="5" x2="4.2" y2="4.7" width="0.2" layer="1" curve="80.472717"/>
+<wire x1="4.2" y1="4.7" x2="4.5" y2="4.8" width="0.2" layer="1"/>
+<wire x1="4.5" y1="4.8" x2="5.91514375" y2="4.46929375" width="0.2" layer="1" curve="-52.407106"/>
 </signal>
 <signal name="N$21">
 <contactref element="B4" pad="7"/>

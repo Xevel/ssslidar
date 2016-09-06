@@ -83,18 +83,19 @@
 <symbols>
 <symbol name="BLADE_PWR_BOTTOM">
 <pin name="GND" x="-7.62" y="-7.62" length="short"/>
-<pin name="VDD" x="-7.62" y="7.62" length="short"/>
-<pin name="SCL" x="10.16" y="5.08" length="short" rot="R180"/>
-<pin name="SDA1" x="10.16" y="2.54" length="short" rot="R180"/>
-<pin name="INT1" x="10.16" y="0" length="short" rot="R180"/>
-<pin name="SDA2" x="10.16" y="-2.54" length="short" rot="R180"/>
-<pin name="INT2" x="10.16" y="-5.08" length="short" rot="R180"/>
-<wire x1="-5.08" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
-<text x="-5.334" y="10.922" size="1.778" layer="95">&gt;NAME</text>
+<pin name="VDD" x="-7.62" y="10.16" length="short"/>
+<pin name="SCL" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="SDA1" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="INT1" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="SDA2" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="INT2" x="12.7" y="-5.08" length="short" rot="R180"/>
+<wire x1="-5.08" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<text x="-5.334" y="13.462" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VDD_PASS" x="-7.62" y="7.62" length="short"/>
 </symbol>
 <symbol name="BLADE_PWR_TOP">
 <pin name="GND" x="-7.62" y="-2.54" length="short"/>
@@ -151,12 +152,13 @@
 <device name="" package="BLADE">
 <connects>
 <connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="INT1" pad="4"/>
+<connect gate="G$1" pin="INT1" pad="5"/>
 <connect gate="G$1" pin="INT2" pad="10"/>
 <connect gate="G$1" pin="SCL" pad="11"/>
-<connect gate="G$1" pin="SDA1" pad="3"/>
+<connect gate="G$1" pin="SDA1" pad="4"/>
 <connect gate="G$1" pin="SDA2" pad="9"/>
 <connect gate="G$1" pin="VDD" pad="2"/>
+<connect gate="G$1" pin="VDD_PASS" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -328,7 +330,7 @@
 <instance part="B6" gate="G$1" x="5.08" y="99.06"/>
 <instance part="GND1" gate="1" x="-2.54" y="63.5"/>
 <instance part="VDD1" gate="G$1" x="-2.54" y="73.66"/>
-<instance part="VDD2" gate="G$1" x="35.56" y="78.74"/>
+<instance part="VDD2" gate="G$1" x="27.94" y="81.28"/>
 <instance part="GND2" gate="1" x="35.56" y="58.42"/>
 <instance part="GND3" gate="1" x="38.1" y="91.44"/>
 <instance part="GND4" gate="1" x="-2.54" y="91.44"/>
@@ -372,6 +374,7 @@
 <segment>
 <pinref part="B1" gate="G$1" pin="VDD"/>
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
+<wire x1="27.94" y1="78.74" x2="35.56" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -380,8 +383,8 @@
 <wire x1="15.24" y1="68.58" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="68.58" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="SCL"/>
-<wire x1="27.94" y1="73.66" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
-<junction x="53.34" y="73.66"/>
+<wire x1="27.94" y1="73.66" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
+<junction x="55.88" y="73.66"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -433,7 +436,7 @@
 <wire x1="17.78" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="83.82" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="INT1"/>
-<wire x1="58.42" y1="68.58" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="68.58" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -481,7 +484,7 @@
 <wire x1="-7.62" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="53.34" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="SDA2"/>
-<wire x1="60.96" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="66.04" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -492,13 +495,12 @@
 <wire x1="-5.08" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="50.8" x2="58.42" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="INT2"/>
-<wire x1="58.42" y1="63.5" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="SDA1"/>
-<wire x1="53.34" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="71.12" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="86.36" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="B6" gate="G$1" pin="D"/>
