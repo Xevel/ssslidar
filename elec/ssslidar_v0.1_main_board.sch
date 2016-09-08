@@ -4137,7 +4137,9 @@ http://www.micrel.com&lt;p&gt;
 <part name="VDD8" library="supply1" deviceset="VDD" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="VDD12" library="supply1" deviceset="VDD" device=""/>
+<part name="SUPPLY4" library="supply2" deviceset="VEE" device=""/>
+<part name="R4" library="Xevelabs" deviceset="R" device="0402" value="TBD"/>
+<part name="R6" library="Xevelabs" deviceset="R" device="0402" value="TBD"/>
 </parts>
 <sheets>
 <sheet>
@@ -4203,7 +4205,7 @@ XRCGB32M000F0Z00R0 (32MHz)</text>
 <instance part="GND11" gate="1" x="106.68" y="218.44"/>
 <instance part="C3" gate="G$1" x="78.74" y="226.06"/>
 <instance part="C4" gate="G$1" x="137.16" y="228.6"/>
-<instance part="P+2" gate="1" x="60.96" y="162.56"/>
+<instance part="P+2" gate="1" x="73.66" y="162.56"/>
 <instance part="GND12" gate="1" x="55.88" y="144.78"/>
 <instance part="JP1" gate="G$1" x="30.48" y="157.48" rot="MR0"/>
 <instance part="U4" gate="A" x="241.3" y="185.42"/>
@@ -4287,7 +4289,9 @@ XRCGB32M000F0Z00R0 (32MHz)</text>
 <instance part="VDD8" gate="G$1" x="12.7" y="101.6"/>
 <instance part="GND25" gate="1" x="12.7" y="88.9"/>
 <instance part="GND27" gate="1" x="96.52" y="91.44"/>
-<instance part="VDD12" gate="G$1" x="68.58" y="30.48"/>
+<instance part="SUPPLY4" gate="G$1" x="68.58" y="30.48"/>
+<instance part="R4" gate="G$1" x="45.72" y="160.02" rot="R90"/>
+<instance part="R6" gate="G$1" x="45.72" y="157.48" rot="MR270"/>
 </instances>
 <busses>
 </busses>
@@ -4576,11 +4580,6 @@ XRCGB32M000F0Z00R0 (32MHz)</text>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="VDD8" gate="G$1" pin="VDD"/>
 </segment>
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="27.94" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="VDD12" gate="G$1" pin="VDD"/>
-</segment>
 </net>
 <net name="C_INT2" class="0">
 <segment>
@@ -4746,6 +4745,7 @@ XRCGB32M000F0Z00R0 (32MHz)</text>
 <wire x1="243.84" y1="43.18" x2="241.3" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="45.72" x2="243.84" y2="53.34" width="0.1524" layer="91"/>
 <junction x="243.84" y="53.34"/>
+<junction x="243.84" y="45.72"/>
 </segment>
 <segment>
 <label x="76.2" y="63.5" size="1.778" layer="95"/>
@@ -5026,9 +5026,9 @@ XRCGB32M000F0Z00R0 (32MHz)</text>
 </net>
 <net name="+5V" class="0">
 <segment>
-<wire x1="35.56" y1="154.94" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="154.94" x2="73.66" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
-<wire x1="60.96" y1="154.94" x2="60.96" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="154.94" x2="73.66" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
@@ -5040,9 +5040,9 @@ XRCGB32M000F0Z00R0 (32MHz)</text>
 </net>
 <net name="RXD" class="0">
 <segment>
-<wire x1="35.56" y1="157.48" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
-<label x="45.72" y="157.48" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="RXI"/>
+<label x="60.96" y="157.48" size="1.778" layer="95"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="157.48" x2="60.96" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="264.16" y1="157.48" x2="271.78" y2="157.48" width="0.1524" layer="91"/>
@@ -5052,9 +5052,9 @@ XRCGB32M000F0Z00R0 (32MHz)</text>
 </net>
 <net name="TXD" class="0">
 <segment>
-<wire x1="35.56" y1="160.02" x2="45.72" y2="160.02" width="0.1524" layer="91"/>
-<label x="45.72" y="160.02" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="TXO"/>
+<label x="60.96" y="160.02" size="1.778" layer="95"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="160.02" x2="60.96" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="264.16" y1="160.02" x2="271.78" y2="160.02" width="0.1524" layer="91"/>
@@ -5234,6 +5234,11 @@ XRCGB32M000F0Z00R0 (32MHz)</text>
 <pinref part="U1" gate="G$1" pin="XSHUT"/>
 <wire x1="157.48" y1="15.24" x2="177.8" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VEE"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="27.94" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VEE"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5485,6 +5490,26 @@ XRCGB32M000F0Z00R0 (32MHz)</text>
 <pinref part="K1" gate="K" pin="1"/>
 <pinref part="U4" gate="A" pin="PA4"/>
 <wire x1="292.1" y1="205.74" x2="264.16" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="160.02" x2="40.64" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="TXO"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="157.48" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="RXI"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="IC2" gate="G1" pin="BYP"/>
+<wire x1="93.98" y1="226.06" x2="91.44" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
