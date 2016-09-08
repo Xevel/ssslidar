@@ -62,6 +62,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -137,8 +138,7 @@
 <wire x1="1.7" y1="4.75" x2="1.65" y2="4.6" width="0.15" layer="22"/>
 <text x="2.4" y="1.4" size="1" layer="22" font="vector" ratio="15" rot="MR0">UP</text>
 <text x="0.85" y="1.4" size="1" layer="21" font="vector" ratio="15">UP</text>
-<wire x1="1.7" y1="4.75" x2="1.7" y2="4.55" width="0.15" layer="22"/>
-<wire x1="1.7" y1="4.55" x2="1.7" y2="2.7" width="0.15" layer="22"/>
+<wire x1="1.7" y1="4.75" x2="1.7" y2="2.7" width="0.15" layer="22"/>
 <wire x1="1.95" y1="4.5" x2="1.7" y2="4.95" width="0.15" layer="21"/>
 <wire x1="1.7" y1="4.95" x2="1.45" y2="4.5" width="0.15" layer="21"/>
 <wire x1="1.45" y1="4.5" x2="1.95" y2="4.5" width="0.15" layer="21"/>
@@ -147,6 +147,8 @@
 <wire x1="1.6" y1="4.55" x2="1.75" y2="4.6" width="0.15" layer="21"/>
 <wire x1="1.7" y1="4.55" x2="1.7" y2="2.7" width="0.15" layer="21"/>
 <text x="9.45" y="0.6" size="1" layer="21" font="vector" ratio="15">PWR</text>
+<circle x="8.15" y="6.15" radius="0.25" width="0" layer="21"/>
+<circle x="8.2" y="2.6" radius="0.25" width="0" layer="22"/>
 </plain>
 <libraries>
 <library name="Xevelabs">

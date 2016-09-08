@@ -4107,7 +4107,7 @@ http://www.micrel.com&lt;p&gt;
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="D1" library="OPL" deviceset="D*" device="-SOD-123"/>
 <part name="L1" library="Xevelabs" deviceset="L" device="0603" value="Ferrite 10R BLM18BA100SN1D"/>
-<part name="LED2" library="Xevelabs" deviceset="LED" device="0603_L" value="Blue"/>
+<part name="LED2" library="Xevelabs" deviceset="LED" device="0603" value="Blue"/>
 <part name="R1" library="Xevelabs" deviceset="R" device="0402" value="470"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK"/>
@@ -5183,9 +5183,9 @@ XRCGB32M000F0Z00R0 (32MHz)</text>
 <label x="40.64" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="264.16" y1="165.1" x2="269.24" y2="165.1" width="0.1524" layer="91"/>
-<label x="269.24" y="165.1" size="1.778" layer="95"/>
-<pinref part="U4" gate="A" pin="PB4"/>
+<wire x1="264.16" y1="167.64" x2="269.24" y2="167.64" width="0.1524" layer="91"/>
+<label x="269.24" y="167.64" size="1.778" layer="95"/>
+<pinref part="U4" gate="A" pin="PB3"/>
 </segment>
 </net>
 <net name="DXL&lt;MCU" class="0">
@@ -5195,9 +5195,9 @@ XRCGB32M000F0Z00R0 (32MHz)</text>
 <label x="40.64" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="264.16" y1="167.64" x2="269.24" y2="167.64" width="0.1524" layer="91"/>
-<label x="269.24" y="167.64" size="1.778" layer="95"/>
-<pinref part="U4" gate="A" pin="PB3"/>
+<wire x1="264.16" y1="165.1" x2="269.24" y2="165.1" width="0.1524" layer="91"/>
+<label x="269.24" y="165.1" size="1.778" layer="95"/>
+<pinref part="U4" gate="A" pin="PB4"/>
 </segment>
 </net>
 <net name="VEE" class="0">
