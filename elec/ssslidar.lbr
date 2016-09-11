@@ -62,20 +62,20 @@
 <library>
 <packages>
 <package name="BLADE">
-<smd name="2" x="1.75" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="3" x="2.85" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="4" x="3.95" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="5" x="5.05" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="6" x="6.15" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="11" x="1.75" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="10" x="2.85" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="9" x="3.95" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="8" x="5.05" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="7" x="6.15" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="1" x="0.5" y="0" dx="2.5" dy="1" layer="1" roundness="80" rot="R90"/>
-<wire x1="6.7" y1="0.6" x2="12.5" y2="0.6" width="0.127" layer="21"/>
-<wire x1="12.5" y1="0.6" x2="12.5" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="12.5" y1="-0.6" x2="6.7" y2="-0.6" width="0.127" layer="21"/>
+<smd name="2" x="2.4" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="3" x="3.5" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="4" x="4.6" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="5" x="5.7" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="6" x="6.8" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="11" x="2.4" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="10" x="3.5" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="9" x="4.6" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="8" x="5.7" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="7" x="6.8" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="1" x="0.85" y="0" dx="2.5" dy="1.7" layer="1" roundness="80" rot="R90"/>
+<wire x1="7.5" y1="0.8" x2="12.45" y2="0.8" width="0.127" layer="21"/>
+<wire x1="12.45" y1="0.8" x2="12.45" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="12.45" y1="-0.8" x2="7.5" y2="-0.8" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>

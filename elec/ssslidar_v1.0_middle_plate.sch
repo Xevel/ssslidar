@@ -64,25 +64,25 @@
 <library name="ssslidar">
 <packages>
 <package name="BLADE">
-<smd name="2" x="1.75" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="3" x="2.85" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="4" x="3.95" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="5" x="5.05" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="6" x="6.15" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="11" x="1.75" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="10" x="2.85" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="9" x="3.95" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="8" x="5.05" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="7" x="6.15" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
-<smd name="1" x="0.5" y="0" dx="2.5" dy="1" layer="1" roundness="80" rot="R90"/>
-<wire x1="6.7" y1="0.6" x2="12.5" y2="0.6" width="0.127" layer="21"/>
-<wire x1="12.5" y1="0.6" x2="12.5" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="12.5" y1="-0.6" x2="6.7" y2="-0.6" width="0.127" layer="21"/>
+<smd name="2" x="2.4" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="3" x="3.5" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="4" x="4.6" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="5" x="5.7" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="6" x="6.8" y="-1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="11" x="2.4" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="10" x="3.5" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="9" x="4.6" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="8" x="5.7" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="7" x="6.8" y="1.1" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="1" x="0.85" y="0" dx="2.5" dy="1.7" layer="1" roundness="80" rot="R90"/>
+<wire x1="7.5" y1="0.8" x2="12.45" y2="0.8" width="0.127" layer="21"/>
+<wire x1="12.45" y1="0.8" x2="12.45" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="12.45" y1="-0.8" x2="7.5" y2="-0.8" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
 <symbol name="BLADE_PWR_BOTTOM">
-<pin name="GND" x="-7.62" y="-7.62" length="short"/>
+<pin name="GND" x="-7.62" y="-12.7" length="short"/>
 <pin name="VDD" x="-7.62" y="10.16" length="short"/>
 <pin name="SCL" x="12.7" y="5.08" length="short" rot="R180"/>
 <pin name="SDA1" x="12.7" y="2.54" length="short" rot="R180"/>
@@ -90,12 +90,15 @@
 <pin name="SDA2" x="12.7" y="-2.54" length="short" rot="R180"/>
 <pin name="INT2" x="12.7" y="-5.08" length="short" rot="R180"/>
 <wire x1="-5.08" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
 <text x="-5.334" y="13.462" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VDD_PASS" x="-7.62" y="7.62" length="short"/>
+<pin name="NC1" x="12.7" y="-12.7" length="short" rot="R180"/>
+<pin name="NC2" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="NC3" x="12.7" y="-7.62" length="short" rot="R180"/>
 </symbol>
 <symbol name="BLADE_PWR_TOP">
 <pin name="GND" x="-7.62" y="-2.54" length="short"/>
@@ -154,6 +157,9 @@
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="INT1" pad="5"/>
 <connect gate="G$1" pin="INT2" pad="10"/>
+<connect gate="G$1" pin="NC1" pad="6"/>
+<connect gate="G$1" pin="NC2" pad="7"/>
+<connect gate="G$1" pin="NC3" pad="8"/>
 <connect gate="G$1" pin="SCL" pad="11"/>
 <connect gate="G$1" pin="SDA1" pad="4"/>
 <connect gate="G$1" pin="SDA2" pad="9"/>
@@ -356,6 +362,7 @@
 <segment>
 <pinref part="B1" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="35.56" y1="60.96" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="B4" gate="G$1" pin="GND"/>
