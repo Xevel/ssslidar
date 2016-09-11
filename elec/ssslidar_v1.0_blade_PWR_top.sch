@@ -719,7 +719,6 @@
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="VDD3" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD4" library="supply1" deviceset="VDD" device=""/>
-<part name="P1" library="Xevelabs" deviceset="PIN" device="_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT"/>
 <part name="P2" library="Xevelabs" deviceset="PIN" device="_SMD_1X1_RECT" value="PIN_SMD_1X1_RECT"/>
 <part name="P3" library="Xevelabs" deviceset="PIN" device="_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT"/>
 <part name="P4" library="Xevelabs" deviceset="PIN" device="_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT"/>
@@ -727,12 +726,11 @@
 <part name="P6" library="Xevelabs" deviceset="PIN" device="_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT"/>
 <part name="P7" library="Xevelabs" deviceset="PIN" device="_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT"/>
 <part name="P16" library="Xevelabs" deviceset="PIN" device="_SMD_1X1_RECT" value="PIN_SMD_1X1_RECT"/>
-<part name="P17" library="Xevelabs" deviceset="PIN" device="_SMD_1X1_RECT" value="PIN_SMD_1X1_RECT"/>
-<part name="P18" library="Xevelabs" deviceset="PIN" device="_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT"/>
+<part name="P17" library="Xevelabs" deviceset="PIN" device="_SMD_1X2" value="PIN_SMD_1X2"/>
 <part name="P8" library="Xevelabs" deviceset="PIN" device="_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT"/>
 <part name="P9" library="Xevelabs" deviceset="PIN" device="_SMD_1X1_RECT" value="PIN_SMD_1X1_RECT"/>
 <part name="P10" library="Xevelabs" deviceset="PIN" device="_SMD_1X1_RECT" value="PIN_SMD_1X1_RECT"/>
-<part name="P11" library="Xevelabs" deviceset="PIN" device="_SMD_1X1_RECT" value="PIN_SMD_1X1_RECT"/>
+<part name="P11" library="Xevelabs" deviceset="PIN" device="_SMD_1X2" value="PIN_SMD_1X2"/>
 <part name="P12" library="Xevelabs" deviceset="PIN" device="_SMD_1X1_RECT" value="PIN_SMD_1X1_RECT"/>
 <part name="P13" library="Xevelabs" deviceset="PIN" device="_SMD_1X1_RECT" value="PIN_SMD_1X1_RECT"/>
 <part name="R1" library="Xevelabs" deviceset="R" device="0402" value="2k"/>
@@ -757,7 +755,6 @@
 <instance part="GND2" gate="1" x="27.94" y="5.08"/>
 <instance part="VDD3" gate="G$1" x="27.94" y="30.48"/>
 <instance part="VDD4" gate="G$1" x="71.12" y="17.78"/>
-<instance part="P1" gate="G$1" x="93.98" y="129.54" rot="MR0"/>
 <instance part="P2" gate="G$1" x="99.06" y="99.06" rot="MR0"/>
 <instance part="P3" gate="G$1" x="99.06" y="81.28" rot="MR0"/>
 <instance part="P4" gate="G$1" x="121.92" y="43.18"/>
@@ -766,7 +763,6 @@
 <instance part="P7" gate="G$1" x="114.3" y="25.4"/>
 <instance part="P16" gate="G$1" x="114.3" y="119.38"/>
 <instance part="P17" gate="G$1" x="114.3" y="99.06"/>
-<instance part="P18" gate="G$1" x="114.3" y="81.28"/>
 <instance part="P8" gate="G$1" x="114.3" y="124.46"/>
 <instance part="P9" gate="G$1" x="114.3" y="104.14"/>
 <instance part="P10" gate="G$1" x="114.3" y="86.36"/>
@@ -777,7 +773,7 @@
 <instance part="R2" gate="G$1" x="106.68" y="53.34"/>
 <instance part="VDD5" gate="G$1" x="96.52" y="60.96"/>
 <instance part="VDD6" gate="G$1" x="106.68" y="60.96"/>
-<instance part="P14" gate="G$1" x="99.06" y="134.62" rot="MR0"/>
+<instance part="P14" gate="G$1" x="109.22" y="134.62" rot="MR180"/>
 <instance part="C3" gate="G$1" x="15.24" y="15.24"/>
 </instances>
 <busses>
@@ -921,11 +917,9 @@
 </segment>
 <segment>
 <pinref part="P3" gate="G$1" pin="1"/>
-<pinref part="P18" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
 <label x="101.6" y="81.28" size="1.778" layer="95"/>
 <pinref part="P10" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="81.28" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="86.36" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
 <junction x="109.22" y="81.28"/>
@@ -970,16 +964,6 @@
 <pinref part="P7" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
 <label x="104.14" y="25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VDD_PASS" class="0">
-<segment>
-<pinref part="P1" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="129.54" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="129.54" x2="101.6" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="P14" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
-<label x="101.6" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
