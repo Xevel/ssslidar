@@ -741,6 +741,9 @@
 <part name="VDD6" library="supply1" deviceset="VDD" device=""/>
 <part name="P14" library="Xevelabs" deviceset="PIN" device="_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT"/>
 <part name="C3" library="Xevelabs" deviceset="C" device="0402" value="100nF"/>
+<part name="P15" library="Xevelabs" deviceset="PIN" device="_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT"/>
+<part name="P19" library="Xevelabs" deviceset="PIN" device="_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT"/>
+<part name="P20" library="Xevelabs" deviceset="PIN" device="_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT"/>
 </parts>
 <sheets>
 <sheet>
@@ -779,6 +782,9 @@
 <instance part="VDD6" gate="G$1" x="106.68" y="60.96"/>
 <instance part="P14" gate="G$1" x="99.06" y="134.62" rot="MR0"/>
 <instance part="C3" gate="G$1" x="15.24" y="15.24"/>
+<instance part="P15" gate="G$1" x="104.14" y="147.32" rot="MR0"/>
+<instance part="P19" gate="G$1" x="104.14" y="152.4" rot="MR0"/>
+<instance part="P20" gate="G$1" x="104.14" y="157.48" rot="MR0"/>
 </instances>
 <busses>
 </busses>
