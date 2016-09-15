@@ -18,15 +18,15 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -157,7 +157,7 @@
 <text x="25.9" y="40.15" size="1" layer="21" font="vector" ratio="17" rot="SR135">PWR</text>
 <dimension x1="0.5" y1="30" x2="29.5" y2="30" x3="15" y3="45.3" textsize="1" textratio="17" layer="47"/>
 <dimension x1="15" y1="43.5" x2="15" y2="1.5" x3="-0.8" y3="22.5" textsize="1" textratio="17" layer="47"/>
-<text x="25" y="15.6" size="2" layer="21" font="vector" ratio="17" rot="SR90">SSSLidar</text>
+<text x="13.9" y="40.8" size="1.5" layer="21" font="vector" ratio="17" rot="SR180">SSSLidar</text>
 <wire x1="5.2" y1="12.7" x2="8.5" y2="10.8" width="0.15" layer="21"/>
 <wire x1="8.5" y1="10.8" x2="8.75" y2="7.45" width="0.15" layer="21"/>
 <wire x1="24.2" y1="12.6" x2="21.85" y2="10.9" width="0.15" layer="21"/>
@@ -182,7 +182,7 @@
 <text x="16.7" y="15.35" size="0.9" layer="21" font="vector" ratio="17" rot="R285">PWR</text>
 <text x="21.05" y="28.9" size="0.9" layer="21" font="vector" ratio="17" rot="R45">SIG</text>
 <text x="6.7" y="26.2" size="0.9" layer="21" font="vector" ratio="17" rot="R165">SIG</text>
-<text x="26.85" y="23.1" size="1.3" layer="21" font="vector" ratio="17" rot="R90">V1.1</text>
+<text x="7" y="42.65" size="1" layer="21" font="vector" ratio="17" rot="SR180">V1.1</text>
 <text x="20.376771875" y="26.268196875" size="1" layer="22" font="vector" ratio="17" rot="SMR0">20160910</text>
 <text x="24.5" y="14.25" size="0.9" layer="22" font="vector" ratio="17" rot="SMR270">V</text>
 <text x="25.05" y="15.6" size="0.9" layer="22" font="vector" ratio="17" rot="SMR270">!R</text>
@@ -1232,7 +1232,7 @@ design rules under a new name.</description>
 <element name="C5" library="Xevelabs" package="0402_N" value="100nF" x="16.85" y="15.95" rot="MR180"/>
 <element name="R4" library="Xevelabs" package="0402_N" value="TBD" x="24.8" y="20.65" rot="MR90"/>
 <element name="R6" library="Xevelabs" package="0402_N" value="TBD" x="25.9" y="20.65" rot="MR90"/>
-<element name="U$3" library="Xevelabs" package="XEVELABS_LOGO_S" value="" x="4.55" y="41.25"/>
+<element name="U$3" library="Xevelabs" package="XEVELABS_LOGO_S" value="" x="14.95" y="11.3"/>
 <element name="U6" library="mpu6000" package="QFN-24" value="MPU-6050" x="15" y="31" rot="MR270">
 <attribute name="DATASHEET" value="http://invensense.com/mems/gyro/documents/PS-MPU-6000A-00_v1.0.pdf" x="5.8" y="38.6" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MFGPN" value="MPU-6000" x="5.8" y="38.6" size="1.778" layer="28" rot="MR270" display="off"/>

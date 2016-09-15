@@ -4082,6 +4082,29 @@ XRCGB32M000F0Z00R0 (32MHz)</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,218.44,210.82,U4,VDDA/VREF+,VDD,,,"/>
+<approved hash="208,1,213.36,68.58,VDD,sup,,,,"/>
+<approved hash="208,1,129.54,238.76,VDD,sup,,,,"/>
+<approved hash="208,1,106.68,236.22,VDD,out,,,,"/>
+<approved hash="208,1,27.94,96.52,VDD,sup,,,,"/>
+<approved hash="208,1,48.26,27.94,VDD,sup,,,,"/>
+<approved hash="208,1,114.3,99.06,VDD,sup,,,,"/>
+<approved hash="208,1,134.62,162.56,VDD,sup,,,,"/>
+<approved hash="208,1,165.1,233.68,VDD,sup,,,,"/>
+<approved hash="208,1,213.36,218.44,VDD,sup,,,,"/>
+<approved hash="208,1,96.52,101.6,VDD,sup,,,,"/>
+<approved hash="208,1,12.7,99.06,VDD,sup,,,,"/>
+<approved hash="208,1,317.5,7.62,VDD,sup,,,,"/>
+<approved hash="208,1,370.84,-2.54,VDD,sup,,,,"/>
+<approved hash="208,1,287.02,22.86,VDD,sup,,,,"/>
+<approved hash="208,1,203.2,66.04,VEE,sup,,,,"/>
+<approved hash="208,1,129.54,205.74,VEE,sup,,,,"/>
+<approved hash="208,1,106.68,203.2,VEE,out,,,,"/>
+<approved hash="208,1,106.68,30.48,VEE,sup,,,,"/>
+<approved hash="208,1,177.8,15.24,VEE,sup,,,,"/>
+<approved hash="208,1,68.58,27.94,VEE,sup,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
