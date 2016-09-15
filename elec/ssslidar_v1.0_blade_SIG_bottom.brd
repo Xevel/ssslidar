@@ -184,7 +184,7 @@
 <text x="-0.97" y="0.67" size="0.7" layer="27" ratio="5">&gt;VALUE</text>
 </package>
 <package name="PIN_SMD_1X2">
-<smd name="P$1" x="0" y="0" dx="1" dy="2" layer="1" roundness="20" rot="R180"/>
+<smd name="P$1" x="0" y="0" dx="1" dy="2" layer="1" roundness="20" rot="R270"/>
 </package>
 <package name="PIN_SMD_0.8X1_RECT">
 <smd name="PIN" x="0" y="0" dx="1" dy="0.8" layer="1" roundness="10"/>
@@ -413,18 +413,18 @@ design rules under a new name.</description>
 <element name="C2" library="Xevelabs" package="0402_N" value="100nF" x="6" y="7.85"/>
 <element name="U1" library="VL53L0X" package="VL53L0X" value="VL53L0X" x="9.3" y="7.85" rot="R90"/>
 <element name="U2" library="VL53L0X" package="VL53L0X" value="VL53L0X" x="9.3" y="7.85" rot="MR270"/>
-<element name="P2" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="9.25" rot="MR0"/>
+<element name="P2" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="9.25" rot="MR270"/>
 <element name="P4" library="Xevelabs" package="PIN_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT" x="5.2" y="0.75" rot="R90"/>
 <element name="P5" library="Xevelabs" package="PIN_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT" x="6.3" y="0.75" rot="MR90"/>
 <element name="P6" library="Xevelabs" package="PIN_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT" x="6.3" y="0.75" rot="R90"/>
 <element name="P7" library="Xevelabs" package="PIN_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT" x="5.2" y="0.75" rot="MR90"/>
-<element name="P16" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="4" rot="R180"/>
-<element name="P17" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="1.25" rot="MR0"/>
-<element name="P9" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="9.25"/>
-<element name="P10" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="6.5" rot="MR180"/>
-<element name="P11" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="1.25"/>
-<element name="P12" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="6.5"/>
-<element name="P13" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="4" rot="MR0"/>
+<element name="P16" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="4" rot="R270"/>
+<element name="P17" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="1.25" rot="MR270"/>
+<element name="P9" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="9.25" rot="R90"/>
+<element name="P10" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="6.5" rot="MR90"/>
+<element name="P11" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="1.25" rot="R90"/>
+<element name="P12" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="6.5" rot="R90"/>
+<element name="P13" library="Xevelabs" package="PIN_SMD_1X2" value="PIN_SMD_1X2" x="0.75" y="4" rot="MR270"/>
 <element name="P14" library="Xevelabs" package="PIN_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT" x="1.95" y="9.75" rot="R90"/>
 <element name="P15" library="Xevelabs" package="PIN_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT" x="3.05" y="0.75" rot="R90"/>
 <element name="P19" library="Xevelabs" package="PIN_SMD_0.8X1_RECT" value="PIN_SMD_0.8X1_RECT" x="4.15" y="0.75" rot="R90"/>

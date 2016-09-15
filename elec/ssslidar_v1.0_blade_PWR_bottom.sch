@@ -406,7 +406,7 @@
 <smd name="PIN" x="0" y="0" dx="2" dy="0.8" layer="1" roundness="50"/>
 </package>
 <package name="PIN_SMD_1X2">
-<smd name="P$1" x="0" y="0" dx="1" dy="2" layer="1" roundness="20" rot="R180"/>
+<smd name="P$1" x="0" y="0" dx="1" dy="2" layer="1" roundness="20" rot="R270"/>
 </package>
 <package name="PIN_1.1">
 <pad name="PIN" x="0" y="0" drill="1.1" diameter="1.6" shape="long"/>
@@ -416,6 +416,12 @@
 </package>
 <package name="PIN_SMD_0.8X1_RECT">
 <smd name="PIN" x="0" y="0" dx="1" dy="0.8" layer="1" roundness="10"/>
+</package>
+<package name="PIN_SMD_0.8X1.6">
+<smd name="PIN" x="0" y="0" dx="1.6" dy="0.8" layer="1" roundness="50"/>
+</package>
+<package name="PIN_SMD_1X1.6">
+<smd name="PIN" x="0" y="0" dx="1.6" dy="1" layer="1" roundness="50"/>
 </package>
 </packages>
 <symbols>
@@ -599,6 +605,22 @@
 </technologies>
 </device>
 <device name="_SMD_0.8X1_RECT" package="PIN_SMD_0.8X1_RECT">
+<connects>
+<connect gate="G$1" pin="1" pad="PIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SMD_0.8X1.6" package="PIN_SMD_0.8X1.6">
+<connects>
+<connect gate="G$1" pin="1" pad="PIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SMD_1X1.6" package="PIN_SMD_1X1.6">
 <connects>
 <connect gate="G$1" pin="1" pad="PIN"/>
 </connects>
